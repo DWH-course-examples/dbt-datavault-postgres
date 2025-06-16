@@ -34,5 +34,9 @@ with staging as (
     }}
 )
 
-select *, {{var('load_date')}} as LOAD_DATE,
-    {{ var('load_date') }} AS EFFECTIVE_FROM from staging
+select 
+    *, 
+    {{var('load_date')}} as LOAD_DATE,
+    {{ var('load_date') }} AS EFFECTIVE_FROM
+from 
+    staging

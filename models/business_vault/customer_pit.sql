@@ -3,14 +3,14 @@
 {%- set yaml_metadata -%}
 source_model: hub_customer
 src_pk: CUSTOMER_PK
-as_of_dates_table: AS_OF_DATE
+as_of_dates_table: as_of_date
 satellites:
-  SAT_CUSTOMER:
+  sat_customer:
     pk:
       PK: CUSTOMER_PK
     ldts:
       LDTS: LOAD_DATE
-  SAT_CUSTOMER_CRM:
+  sat_customer_crm:
     pk:
       PK: CUSTOMER_PK
     ldts:
@@ -31,7 +31,7 @@ src_ldts: LOAD_DATE
 {% set src_ldts = metadata_dict['src_ldts'] %}
 
 {{ automate_dv.pit(source_model=source_model, src_pk=src_pk,
-                   as_of_dates_table=as_of_dates_table,
-                   satellites=satellites,
-                   stage_tables_ldts=stage_tables_ldts,
-                   src_ldts=src_ldts) }}
+                  as_of_dates_table=as_of_dates_table,
+                  satellites=satellites,
+                  stage_tables_ldts=stage_tables_ldts,
+                  src_ldts=src_ldts) }}

@@ -29,13 +29,14 @@ hashed_columns:
 
 WITH staging AS (
 {{ automate_dv.stage(include_source_columns=true,
-                     source_model=source_model,
-                     derived_columns=derived_columns,
-                     hashed_columns=hashed_columns,
-                     ranked_columns=none) }}
+                    source_model=source_model,
+                    derived_columns=derived_columns,
+                    hashed_columns=hashed_columns,
+                    ranked_columns=none) }}
 )
 
-SELECT *,
+SELECT 
+    *,
     {{ var('load_date') }} AS LOAD_DATE,
     {{ var('load_date') }} AS EFFECTIVE_FROM
 FROM staging

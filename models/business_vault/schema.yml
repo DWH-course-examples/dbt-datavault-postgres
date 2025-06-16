@@ -1,9 +1,11 @@
 version: 2
 
 sources:
-  - name: business_vault
+  - name: analyses
     database: postgres
     schema: dbt
     tables:
       - name: as_of_date
-      - name: customer_pit
+      - name: weekly_orders
+      - name: customer_order_count
+      - name: pit_customer
