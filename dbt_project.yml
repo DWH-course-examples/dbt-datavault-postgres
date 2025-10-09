@@ -21,6 +21,13 @@ models:
       tags:
         - 'stage'
       materialized: view
+    cdm:
+      tags:
+        - 'marts'
+      materialized: view
+    business_vault:
+      tags:
+        - 'business_vault'
     raw_vault:
       tags:
         - 'raw_vault'

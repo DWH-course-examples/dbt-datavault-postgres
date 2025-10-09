@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: cdm
+    database: postgres
+    schema: dbt
+    tables:
+      - name: orders_statistic_weekly
