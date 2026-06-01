@@ -4,3 +4,7 @@
 /.user.yml
 /dbt_packages/
 /dbt_packages/automate_dv/
+dbt_env/
+__pycache__/
+*.pyc
+.venv/
