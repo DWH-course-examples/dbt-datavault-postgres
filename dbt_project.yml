@@ -14,6 +14,7 @@ target-path: target
 
 vars:
   load_date: 'current_timestamp'
+  hash: 'sha'
 
 models:
   jaffle_shop_dbtvault:
@@ -34,3 +35,5 @@ models:
       sats:
         tags:
           - 'satellite'
+    marts:
+      materialized: view
