@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: business_vault
+    database: postgres
+    schema: dbt
+    tables:
+      - name: as_of_date
+      - name: customer_pit
