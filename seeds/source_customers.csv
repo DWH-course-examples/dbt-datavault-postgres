@@ -1,6 +1,5 @@
 id,first_name,last_name,email
 1,Michael,Perez,mperez0@chronoengine.com
-2,Shawn,Mccoy,smccoy1@reddit.com
 3,Kathleen,Payne,kpayne2@cargocollective.com
 4,Jimmy,Cooper,jcooper3@cargocollective.com
 5,Katherine,Rice,krice4@typepad.com
@@ -102,3 +101,5 @@ id,first_name,last_name,email
 101,Donald,Trump,d.trump@usa.gov
 102,Peter,Erickson,erickson1993@fake.com
 103,Elena,Klum,e.klum@fake.com
+104,Anna,Smirnova,asmirnova@example.com
+104,Anna,Smirnova,new_email@example.com

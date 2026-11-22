@@ -1,0 +1,9 @@
+config-version: 2
+name: 'imdb'
+version: '1.0.0'
+profile: 'clickhouse_imdb'
+model-paths: ["models"]
+models:
+  imdb:
+    actors:
+      +materialized: view
